@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html {
+			   font-family: Bookman Old Style;
+			   text-shadow: 1px 1px #0000FF;
+			   background-image: url("pic.jpg");
+		}
+.flex-container {
+  text-align: center;
+  display: flex;
+  flex-wrap: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container div:hover {
+   background-color: white; 
+}
+.flex-item {
+  text-align: center;
+  border: 2px solid rgba(1, 1, 1, 1);
+  background-color: aqua;	
+  width: auto ;
+  margin: 25px;
+  line-height: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  opacity: 8;
+}
+
+
+.container {
+  padding: 10px;
+  opacity: 8;
+  display: grid;
+  width: 100%px;
+  height:350px;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 50px 305px; 
+  grid-template-areas:
+      "Header Header Header Header"
+      "CoTE tanya EEiaR SpyRoom" ;
+     
+}
+.header {
+  border: 2px solid rgba(1, 1, 1, 1);
+  padding: 20px;
+  text-align: left;
+  grid-area: Header;
+  background-color:brown;
+  font-size: 20px;
+}
+
+
+.CoTE {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: CoTE;
+  background-color: brown;
+ }
+.tanya {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: tanya;
+  background-color: brown;
+ }
+.EEiaR {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: EEiaR;
+  background-color: brown;
+ }
+.SpyRoom {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  grid-area: SpyRoom;
+  background-color: brown;
+ }
+.header {
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 10px;
+  text-align: center;
+  grid-area: Header;
+  background-color: brown;
+}
+@media screen and (max-width: 500px) {
+.container{
+  margin: auto;
+  padding: 10px;
+  display: grid;
+  width: 447px ;
+  height: 2500px ;
+  grid-template-columns: 447px ;
+  grid-template-rows: 50px 1fr 1fr 1fr 1fr ; 	
+  grid-template-areas:
+      "Header"
+      "CoTE"
+      "tanya"
+      "EEiaR" 
+      "SpyRoom"	  ; 
+	  
+}
+}	
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+</style>
+</head>
+<body> 
+ <div class="container">
+    <div class="header">My Favorite Video Games</div>
+    <div class="CoTE"><td><img src="valo.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+    <div class="tanya"><td><img src="fn.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="EEiaR"><img src="csgo.jpg" width=200 height=300 class=center bgcolor=white></a> </div>
+	<div class="SpyRoom"><td><td><img src="rl.jpg" width=200 height=300 class=center bgcolor=white></a></div>
+ </div>
+  <div class="flex-container">   
+  <div class="flex-item"><a href="index.html">Main Page</a></div>
+   <div class="flex-item"> <a href="foods.html">My Favorite Foods</a></div>  
+   <div class="flex-item"> <a href="songs.html">My Favorite Songs</a></div> 
+   <div class="flex-item"><a href="teams.html">My Favorite Soccer Teams</a></div>
+   <div class="flex-item"><a href="games.html">My Favorite Video Games</a></div>
+</div>
+</body>
+</html>
